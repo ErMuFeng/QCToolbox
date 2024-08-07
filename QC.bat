@@ -14,7 +14,7 @@ echo 9.磁盘清理 10.屏幕键盘 11.检查DX
 echo 12.本地服务设置 13.计算机管理
 echo 14.磁盘管理实用程序 15.磁盘碎片整理程序
 echo 16.Chkdsk磁盘检查 17.设备管理器
-echo 18.系统医生 19.系统配置实用程序
+echo 18.事件查看器 19.系统配置实用程序
 echo 20.组策略结果集 21.计算机性能监测程序
 echo 22.Windows版本 23.打开控制台
 echo 24.IP地址侦测器 25.字符映射表
@@ -204,7 +204,7 @@ cls
 goto menu
 
 :18
-drwtsn32
+eventvwr
 pause
 cls
 goto menu
