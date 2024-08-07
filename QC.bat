@@ -1,28 +1,28 @@
 @echo off
-title QC¹¤¾ßÏä
+title QCå·¥å…·ç®±
 color 2f
 goto menu
 :menu
 cls
-echo QC¹¤¾ßÏä
+echo QCå·¥å…·ç®±
 echo ___________________________________
-echo A.About¹ØÓÚ B.Help°ïÖú C.ExitÍË³ö
-echo 1.×¢²á±í 2.×é²ßÂÔ 3.ÃüÁîÌáÊ¾·û
-echo 4.×ÊÔ´¹ÜÀíÆ÷ 5.ÈÎÎñ¹ÜÀíÆ÷
-echo 6.¼ÆËãÆ÷ 7.±¾µØÓÃ»§ºÍ×é 8.powershell
-echo 9.´ÅÅÌÇåÀí 10.ÆÁÄ»¼üÅÌ 11.¼ì²éDX
-echo 12.±¾µØ·þÎñÉèÖÃ 13.¼ÆËã»ú¹ÜÀí
-echo 14.´ÅÅÌ¹ÜÀíÊµÓÃ³ÌÐò 15.´ÅÅÌËéÆ¬ÕûÀí³ÌÐò
-echo 16.Chkdsk´ÅÅÌ¼ì²é 17.Éè±¸¹ÜÀíÆ÷
-echo 18.ÏµÍ³Ò½Éú 19.ÏµÍ³ÅäÖÃÊµÓÃ³ÌÐò
-echo 20.×é²ßÂÔ½á¹û¼¯ 21.¼ÆËã»úÐÔÄÜ¼à²â³ÌÐò
-echo 22.Windows°æ±¾ 23.´ò¿ª¿ØÖÆÌ¨
-echo 24.IPµØÖ·Õì²âÆ÷ 25.×Ö·ûÓ³Éä±í
-echo 26.ODBCÊý¾ÝÔ´¹ÜÀíÆ÷ 27.´ò¿ªÏµÍ³×é¼þ·þÎñ
-echo 28.Ôì×Ö³ÌÐò 29.ÎÄ¼þÇ©ÃûÑéÖ¤³ÌÐò
-echo 30.±¾µØ°²È«²ßÂÔ 31.(TC)ÃüÁî¼ì²é½Ó¿Ú
+echo A.Aboutå…³äºŽ B.Helpå¸®åŠ© C.Exité€€å‡º
+echo 1.æ³¨å†Œè¡¨ 2.ç»„ç­–ç•¥ 3.å‘½ä»¤æç¤ºç¬¦
+echo 4.èµ„æºç®¡ç†å™¨ 5.ä»»åŠ¡ç®¡ç†å™¨
+echo 6.è®¡ç®—å™¨ 7.æœ¬åœ°ç”¨æˆ·å’Œç»„ 8.powershell
+echo 9.ç£ç›˜æ¸…ç† 10.å±å¹•é”®ç›˜ 11.æ£€æŸ¥DX
+echo 12.æœ¬åœ°æœåŠ¡è®¾ç½® 13.è®¡ç®—æœºç®¡ç†
+echo 14.ç£ç›˜ç®¡ç†å®žç”¨ç¨‹åº 15.ç£ç›˜ç¢Žç‰‡æ•´ç†ç¨‹åº
+echo 16.Chkdskç£ç›˜æ£€æŸ¥ 17.è®¾å¤‡ç®¡ç†å™¨
+echo 18.ç³»ç»ŸåŒ»ç”Ÿ 19.ç³»ç»Ÿé…ç½®å®žç”¨ç¨‹åº
+echo 20.ç»„ç­–ç•¥ç»“æžœé›† 21.è®¡ç®—æœºæ€§èƒ½ç›‘æµ‹ç¨‹åº
+echo 22.Windowsç‰ˆæœ¬ 23.æ‰“å¼€æŽ§åˆ¶å°
+echo 24.IPåœ°å€ä¾¦æµ‹å™¨ 25.å­—ç¬¦æ˜ å°„è¡¨
+echo 26.ODBCæ•°æ®æºç®¡ç†å™¨ 27.æ‰“å¼€ç³»ç»Ÿç»„ä»¶æœåŠ¡
+echo 28.é€ å­—ç¨‹åº 29.æ–‡ä»¶ç­¾åéªŒè¯ç¨‹åº
+echo 30.æœ¬åœ°å®‰å…¨ç­–ç•¥ 31.(TC)å‘½ä»¤æ£€æŸ¥æŽ¥å£
 echo ____________________________________
-echo ÇëÊäÈëÄúµÄÑ¡Ïî£º
+echo è¯·è¾“å…¥æ‚¨çš„é€‰é¡¹ï¼š
 set /p your_choice=
 if /i "%your_choice%"=="a" goto a
 if /i "%your_choice%"=="b" goto b
@@ -61,41 +61,41 @@ echo %aa%|findstr "[^1-31]" >nul&&goto :error
 echo %aa%|findstr "[^a-c]" >nul&&goto :error
 
 :error
-echo ÎÞÐ§ÊäÈë
+echo æ— æ•ˆè¾“å…¥
 pause
 cls
 goto menu
 
 :A
 echo About
-echo QC¹¤¾ßÏä
+echo QCå·¥å…·ç®±
 echo v2.0 2024.8.7
 echo by Zzz_swe
-echo ÓÊÏä£ºwszhj2014@outlook.com
+echo é‚®ç®±ï¼šwszhj2014@outlook.com
 echo github:https://github.com/ErMuFeng/QCToolbox
-echo ×÷ÕßÖ÷Ò³£ºhttps://space.bilibili.com/3546579854166742?spm_id_from=333.1007.0.0
+echo ä½œè€…ä¸»é¡µï¼šhttps://space.bilibili.com/3546579854166742?spm_id_from=333.1007.0.0
 pause
 cls
 goto menu
 
 :B
-echo Q&A
-echo Q:ÕâÊÇÊ²Ã´£¿
-echo A:ÕâÊÇÒ»¸ö¹¤¾ßÏä£¬Èç¹ûÄãÆ½Ê±»áÊ¹ÓÃÒ»Ð©ÏµÍ³ÅäÖÃ·½ÃæµÄ³ÌÐò£¬ÄÇÃ´Õâ¸ö¹¤¾ßÏä»á¶ÔÄãºÜÓÐ°ïÖú¡£
-echo Q:ÎªÊ²Ã´»áÓÐÕâ¸ö¹¤¾ßÏä£¿
-echo A:ÒòÎª×÷ÕßÏëÒª×ö³öÒ»¸ö¼«¼ò£¬ÇáÁ¿£¬ºÃÓÃµÄ¹¤¾ßÏä¡£·½±ãÈÕ³£Ê¹ÓÃ
-echo Q:Õâ¸ö¹¤¾ßÏäÓÐÊ²Ã´¹¦ÄÜ£¿
-echo Q:ÈçºÎÊ¹ÓÃ£¿
-echo A:ÊäÈë¶ÔÓ¦µÄÊý×Ö£¬È»ºó»Ø³µ¼´¿É¡£
-echo Q:ÎªÊ²Ã´ÓÐÐ©¹¦ÄÜÎÞ·¨Ê¹ÓÃ£¿
-echo A:ÒòÎªÄ³Ð©¹¦ÄÜÐèÒª¹ÜÀíÔ±È¨ÏÞ£¬ÇëÒÔ¹ÜÀíÔ±Éí·ÝÔËÐÐ¡£
-echo Èç¹ûÎÒ·¢ÏÖÁËbug»òÕßÓÐ½¨Òé£¬ÈçºÎ·´À¡£¿
-echo Çë·¢ËÍµ½ÓÊÏä»òË½ÐÅ×÷Õß£¨Ïê¼ûAbout£©
+echo Q/A
+echo Q:è¿™æ˜¯ä»€ä¹ˆï¼Ÿ
+echo A:è¿™æ˜¯ä¸€ä¸ªå·¥å…·ç®±ï¼Œå¦‚æžœä½ å¹³æ—¶ä¼šä½¿ç”¨ä¸€äº›ç³»ç»Ÿé…ç½®æ–¹é¢çš„ç¨‹åºï¼Œé‚£ä¹ˆè¿™ä¸ªå·¥å…·ç®±ä¼šå¯¹ä½ å¾ˆæœ‰å¸®åŠ©ã€‚
+echo Q:ä¸ºä»€ä¹ˆä¼šæœ‰è¿™ä¸ªå·¥å…·ç®±ï¼Ÿ
+echo A:å› ä¸ºä½œè€…æƒ³è¦åšå‡ºä¸€ä¸ªæžç®€ï¼Œè½»é‡ï¼Œå¥½ç”¨çš„å·¥å…·ç®±ã€‚æ–¹ä¾¿æ—¥å¸¸ä½¿ç”¨
+echo Q:è¿™ä¸ªå·¥å…·ç®±æœ‰ä»€ä¹ˆåŠŸèƒ½ï¼Ÿ
+echo Q:å¦‚ä½•ä½¿ç”¨ï¼Ÿ
+echo A:è¾“å…¥å¯¹åº”çš„æ•°å­—ï¼Œç„¶åŽå›žè½¦å³å¯ã€‚
+echo Q:ä¸ºä»€ä¹ˆæœ‰äº›åŠŸèƒ½æ— æ³•ä½¿ç”¨ï¼Ÿ
+echo A:å› ä¸ºæŸäº›åŠŸèƒ½éœ€è¦ç®¡ç†å‘˜æƒé™ï¼Œè¯·ä»¥ç®¡ç†å‘˜èº«ä»½è¿è¡Œã€‚
+echo å¦‚æžœæˆ‘å‘çŽ°äº†bugæˆ–è€…æœ‰å»ºè®®ï¼Œå¦‚ä½•åé¦ˆï¼Ÿ
+echo è¯·å‘é€åˆ°é‚®ç®±æˆ–ç§ä¿¡ä½œè€…ï¼ˆè¯¦è§Aboutï¼‰
 pause
 goto menu
 
 :C
-echo ÕæµÄÒªÍË³öÂð£¿(y/n)
+echo çœŸçš„è¦é€€å‡ºå—ï¼Ÿ(y/n)
 set /p exityesorno=
 if /i "%exityesorno%"=="y" exit
 if /i "%exityesorno%"=="n" goto menu
